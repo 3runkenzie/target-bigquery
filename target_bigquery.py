@@ -155,9 +155,7 @@ def persist_lines_job(project_id, dataset_id, lines=None):
             # except exceptions.Conflict:
             #     pass
 
-        elif isinstance(msg, singer.ActivateVersionMessage):
-            # This is experimental and won't be used yet
-            pass
+
 
         else:
             raise Exception("Unrecognized message {}".format(msg))
@@ -237,9 +235,7 @@ def persist_lines_stream(project_id, dataset_id, lines=None):
             except exceptions.Conflict:
                 pass
 
-        elif isinstance(msg, singer.ActivateVersionMessage):
-            # This is experimental and won't be used yet
-            pass
+
 
         else:
             raise Exception("Unrecognized message {}".format(msg))
