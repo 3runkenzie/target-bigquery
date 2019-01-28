@@ -154,9 +154,6 @@ def persist_lines_job(project_id, dataset_id, lines=None):
             #     tables[table] = bigquery_client.create_table(tables[table])
             # except exceptions.Conflict:
             #     pass
-
-
-
         else:
             raise Exception("Unrecognized message {}".format(msg))
 
@@ -234,9 +231,6 @@ def persist_lines_stream(project_id, dataset_id, lines=None):
                 tables[table] = bigquery_client.create_table(tables[table])
             except exceptions.Conflict:
                 pass
-
-
-
         else:
             raise Exception("Unrecognized message {}".format(msg))
 
